@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Myrmidon Games</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <!-- GitHub Pages sirve esta página para cualquier ruta que no existe. Los enlaces de
+       reto (/lexiloop/d/…) y de amistad (/lexiloop/u/…) de LexiLoop llegan aquí cuando
+       el juego no está instalado: con el juego instalado, Android los abre en la app. -->
+  <main>
+    <header>
+      <h1 id="title">Página no encontrada</h1>
+      <p class="muted" id="sub">Esta dirección no existe.</p>
+    </header>
+    <div class="card" id="lexiloop" hidden>
+      <h2>LexiLoop</h2>
+      <p id="msg"></p>
+      <p><a href="https://play.google.com/store/apps/details?id=com.myrmidongames.lexiloop">Descargar en Google Play</a></p>
+    </div>
+    <p><a href="/">Ir a Myrmidon Games</a></p>
+  </main>
+  <script>
+    var p = location.pathname, en = !/^es\b/i.test(navigator.language || '');
+    var duel = p.indexOf('/lexiloop/d/') === 0, friend = p.indexOf('/lexiloop/u/') === 0;
+    if (duel || friend) {
+      document.title = 'LexiLoop';
+      document.getElementById('title').textContent = duel ? (en ? 'You have been challenged!' : '¡Te han retado!') : (en ? 'Friend invite' : 'Invitación de amistad');
+      document.getElementById('sub').textContent = en ? 'A word puzzle by Myrmidon Games.' : 'Un puzle de palabras de Myrmidon Games.';
+      document.getElementById('msg').textContent = en
+        ? 'Install LexiLoop and open this link again to ' + (duel ? 'play the challenge.' : 'add your friend.')
+        : 'Instala LexiLoop y vuelve a abrir este enlace para ' + (duel ? 'jugar el reto.' : 'añadir a tu amigo.');
+      if (en) document.querySelector('#lexiloop a').textContent = 'Get it on Google Play';
+      document.getElementById('lexiloop').hidden = false;
+    } else if (en) {
+      document.getElementById('title').textContent = 'Page not found';
+      document.getElementById('sub').textContent = 'This address does not exist.';
+      document.querySelector('main > p a').textContent = 'Go to Myrmidon Games';
+    }
+  </script>
+</body>
+</html>

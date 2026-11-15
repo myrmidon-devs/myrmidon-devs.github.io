@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.myrmidongames.lexiloop",
+      "sha256_cert_fingerprints": [
+        "7F:D3:93:A3:8E:52:72:3B:AB:43:34:E4:8D:64:25:D2:CF:8D:C1:C9:1D:85:66:84:2D:66:BA:94:7B:69:08:91"
+      ]
+    }
+  }
+]
