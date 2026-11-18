@@ -12,7 +12,7 @@
     <header>
       <a class="lang" href="privacy.html">English</a>
       <h1>Política de privacidad de LexiLoop</h1>
-      <p class="muted">Última actualización: 15 de noviembre de 2026</p>
+      <p class="muted">Última actualización: 18 de noviembre de 2026</p>
     </header>
 
     <p>Esta política explica qué datos trata el juego <strong>LexiLoop</strong> para Android, para qué y qué puedes hacer con ellos. LexiLoop no te pide tu nombre real, tu correo ni tu teléfono: juegas con un apodo que eliges tú.</p>
@@ -27,7 +27,12 @@
         <tr>
           <td>Tu partida y tus ajustes (nivel, plumas, palabras de tu léxico, cosméticos, idioma, sonido…)</td>
           <td>Que el juego recuerde tu partida</td>
-          <td>Solo en tu dispositivo</td>
+          <td>En tu dispositivo y en la copia de seguridad de Android de tu cuenta de Google</td>
+        </tr>
+        <tr>
+          <td>Una copia de tu partida, si conectas <strong>Ajustes → Guardado en la nube</strong></td>
+          <td>Recuperar la partida en otro móvil</td>
+          <td>Google Play Juegos (partidas guardadas, en tu cuenta de Google)</td>
         </tr>
         <tr>
           <td>Tu perfil de jugador: apodo, color del avatar, un @usuario que crea el juego al azar, nivel, racha, número de palabras del léxico, rango y tus opciones de privacidad. Va unido a un identificador anónimo de cuenta.</td>
@@ -60,6 +65,11 @@
           <td>Google Play y RevenueCat (ver más abajo)</td>
         </tr>
         <tr>
+          <td>Un identificador de notificaciones del dispositivo (token de Firebase Cloud Messaging), unido a tu cuenta anónima</td>
+          <td>Avisarte cuando un amigo te reta o juega tu reto</td>
+          <td>Supabase y Google Firebase (ver más abajo)</td>
+        </tr>
+        <tr>
           <td>Tu correo y lo que nos cuentes, si nos escribes</td>
           <td>Responderte</td>
           <td>Nuestro correo</td>
@@ -85,11 +95,19 @@
     <h2>Compras (Google Play y RevenueCat)</h2>
     <p>Puedes comprar con dinero real «Quitar anuncios» y cosméticos exclusivos. El pago lo hace siempre <strong>Google Play</strong>: nosotros nunca vemos tu tarjeta ni tus datos de pago. Para saber qué has comprado usamos <strong>RevenueCat</strong>, que recibe el justificante de la compra de Google Play y un identificador anónimo que crea el juego; no recibe tu nombre ni tu correo. Más información: <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>.</p>
 
+    <h2>Notificaciones y guardado en la nube (Google)</h2>
+    <ul>
+      <li><strong>Avisos de retos</strong>: si das permiso de notificaciones, el juego registra tu móvil en <strong>Firebase Cloud Messaging</strong> de Google y guarda ese identificador en Supabase para poder avisarte. Puedes desactivarlo en <strong>Ajustes → Retos de amigos</strong> (el identificador se borra del servidor) o quitar el permiso en los ajustes de Android.</li>
+      <li><strong>Guardado en la nube</strong>: si lo conectas, la partida se guarda en <strong>Google Play Juegos</strong> con tu cuenta de Google. Nosotros no vemos tu cuenta de Google ni tu correo. Puedes borrar esa copia desde la app de Google Play Juegos.</li>
+      <li><strong>Copia de seguridad de Android</strong>: si la tienes activada en tu móvil, Android guarda una copia de la partida en tu cuenta de Google para restaurarla al reinstalar o cambiar de móvil.</li>
+      <li>Más información: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</li>
+    </ul>
+
     <h2>Base legal</h2>
-    <p>Guardar tu partida, tu perfil, tus amigos y tus puntuaciones es necesario para darte el servicio que pides al jugar. Comprobar que las partidas son posibles y mantener el servidor seguro se basa en el interés legítimo de que los rankings sean justos. Los anuncios personalizados se basan en tu consentimiento; los no personalizados y la prevención del fraude, en el interés legítimo de mantener el juego gratuito y seguro. Las compras, en el contrato de compra que aceptas al pagar. Responder a tus mensajes, en tu propia petición.</p>
+    <p>Guardar tu partida, tu perfil, tus amigos y tus puntuaciones es necesario para darte el servicio que pides al jugar. Comprobar que las partidas son posibles y mantener el servidor seguro se basa en el interés legítimo de que los rankings sean justos. Los anuncios personalizados se basan en tu consentimiento; los no personalizados y la prevención del fraude, en el interés legítimo de mantener el juego gratuito y seguro. Las compras, en el contrato de compra que aceptas al pagar. Los avisos de retos y el guardado en la nube, en tu consentimiento al activarlos. Responder a tus mensajes, en tu propia petición.</p>
 
     <h2>Cuánto tiempo se guardan</h2>
-    <p>Los datos del dispositivo se borran al desinstalar el juego. Los de Supabase (perfil, amigos, puntuaciones y retos) se guardan mientras tengas la cuenta, y se borran en el momento en que eliges <strong>Ajustes → Borrar cuenta</strong>. Desinstalar el juego no borra la cuenta del servidor: hazlo antes desde Ajustes, o escríbenos indicando tu @usuario y la borraremos. Los correos se guardan el tiempo necesario para atender tu consulta. Google conserva los datos de anuncios según su propia política.</p>
+    <p>Los datos del dispositivo se borran al desinstalar el juego; las copias en Google Play Juegos y en la copia de seguridad de Android siguen en tu cuenta de Google hasta que las borres. Los de Supabase (perfil, amigos, puntuaciones y retos) se guardan mientras tengas la cuenta, y se borran en el momento en que eliges <strong>Ajustes → Borrar cuenta</strong>. Desinstalar el juego no borra la cuenta del servidor: hazlo antes desde Ajustes, o escríbenos indicando tu @usuario y la borraremos. Los correos se guardan el tiempo necesario para atender tu consulta. Google conserva los datos de anuncios según su propia política.</p>
 
     <h2>Menores</h2>
     <p>LexiLoop es apto para todos los públicos, pero no está dirigido a menores de 13 años y no recogemos a sabiendas datos de menores de esa edad. Si crees que un menor nos ha enviado datos, escríbenos y los borraremos.</p>

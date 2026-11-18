@@ -12,7 +12,7 @@
     <header>
       <a class="lang" href="privacidad.html">Español</a>
       <h1>LexiLoop privacy policy</h1>
-      <p class="muted">Last updated: 15 November 2026</p>
+      <p class="muted">Last updated: 18 November 2026</p>
     </header>
 
     <p>This policy explains what data the game <strong>LexiLoop</strong> for Android handles, why, and what you can do about it. LexiLoop does not ask for your real name, email or phone number: you play with a nickname of your choice.</p>
@@ -27,7 +27,12 @@
         <tr>
           <td>Your game and settings (level, quills, words in your lexicon, cosmetics, language, sound…)</td>
           <td>So the game remembers your progress</td>
-          <td>Only on your device</td>
+          <td>On your device and in the Android backup of your Google account</td>
+        </tr>
+        <tr>
+          <td>A copy of your game, if you connect <strong>Settings → Cloud save</strong></td>
+          <td>Getting your game back on another phone</td>
+          <td>Google Play Games (saved games, in your Google account)</td>
         </tr>
         <tr>
           <td>Your player profile: nickname, avatar colour, a random @username created by the game, level, streak, number of words in your lexicon, rank and your privacy options. It is linked to an anonymous account identifier.</td>
@@ -60,6 +65,11 @@
           <td>Google Play and RevenueCat (see below)</td>
         </tr>
         <tr>
+          <td>A device notification identifier (Firebase Cloud Messaging token), linked to your anonymous account</td>
+          <td>Letting you know when a friend challenges you or plays your challenge</td>
+          <td>Supabase and Google Firebase (see below)</td>
+        </tr>
+        <tr>
           <td>Your email and whatever you tell us, if you write to us</td>
           <td>Replying to you</td>
           <td>Our email</td>
@@ -85,11 +95,19 @@
     <h2>Purchases (Google Play and RevenueCat)</h2>
     <p>You can buy "Remove ads" and exclusive cosmetics with real money. Payment is always handled by <strong>Google Play</strong>: we never see your card or payment details. To know what you have bought we use <strong>RevenueCat</strong>, which receives the Google Play purchase receipt and an anonymous identifier created by the game; it does not receive your name or email. More information: <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>.</p>
 
+    <h2>Notifications and cloud save (Google)</h2>
+    <ul>
+      <li><strong>Challenge alerts</strong>: if you allow notifications, the game registers your phone with Google's <strong>Firebase Cloud Messaging</strong> and stores that identifier in Supabase so it can notify you. You can turn it off in <strong>Settings → Friend challenges</strong> (the identifier is deleted from the server) or remove the permission in Android settings.</li>
+      <li><strong>Cloud save</strong>: if you connect it, your game is saved to <strong>Google Play Games</strong> with your Google account. We never see your Google account or email. You can delete that copy from the Google Play Games app.</li>
+      <li><strong>Android backup</strong>: if it is turned on on your phone, Android keeps a copy of your game in your Google account to restore it when you reinstall or change phone.</li>
+      <li>More information: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</li>
+    </ul>
+
     <h2>Legal basis</h2>
-    <p>Storing your game, profile, friends and scores is necessary to provide the service you ask for when you play. Checking that games are possible and keeping the server secure rely on the legitimate interest of keeping rankings fair. Personalised ads rely on your consent; non-personalised ads and fraud prevention, on the legitimate interest of keeping the game free and safe. Purchases rely on the purchase contract you accept when paying. Replying to your messages relies on your own request.</p>
+    <p>Storing your game, profile, friends and scores is necessary to provide the service you ask for when you play. Checking that games are possible and keeping the server secure rely on the legitimate interest of keeping rankings fair. Personalised ads rely on your consent; non-personalised ads and fraud prevention, on the legitimate interest of keeping the game free and safe. Purchases rely on the purchase contract you accept when paying. Challenge alerts and cloud save rely on your consent when you turn them on. Replying to your messages relies on your own request.</p>
 
     <h2>How long data is kept</h2>
-    <p>Data on your device is deleted when you uninstall the game. Data in Supabase (profile, friends, scores and challenges) is kept while you have the account, and is deleted as soon as you choose <strong>Settings → Delete account</strong>. Uninstalling the game does not delete the account on the server: do it first from Settings, or write to us with your @username and we will delete it. Emails are kept for as long as needed to handle your request. Google keeps ad data according to its own policy.</p>
+    <p>Data on your device is deleted when you uninstall the game; copies in Google Play Games and in the Android backup stay in your Google account until you delete them. Data in Supabase (profile, friends, scores and challenges) is kept while you have the account, and is deleted as soon as you choose <strong>Settings → Delete account</strong>. Uninstalling the game does not delete the account on the server: do it first from Settings, or write to us with your @username and we will delete it. Emails are kept for as long as needed to handle your request. Google keeps ad data according to its own policy.</p>
 
     <h2>Children</h2>
     <p>LexiLoop is suitable for all ages, but it is not directed at children under 13 and we do not knowingly collect data from children under that age. If you believe a child has sent us data, write to us and we will delete it.</p>
