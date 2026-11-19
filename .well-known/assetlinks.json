@@ -5,6 +5,8 @@
       "namespace": "android_app",
       "package_name": "com.myrmidongames.lexiloop",
       "sha256_cert_fingerprints": [
+        "66:FA:2C:38:40:2F:78:9A:DF:E6:2D:41:E1:2B:EB:29:82:23:57:7B:B3:81:22:A5:46:32:8B:64:5A:FD:28:71",
+        "9C:CF:D0:60:FD:F3:B0:07:BB:F2:DF:6E:9B:26:50:E6:46:C1:BE:0B:ED:F1:B5:58:54:1C:7C:5B:03:33:FB:66",
         "7F:D3:93:A3:8E:52:72:3B:AB:43:34:E4:8D:64:25:D2:CF:8D:C1:C9:1D:85:66:84:2D:66:BA:94:7B:69:08:91"
       ]
     }
